@@ -276,13 +276,13 @@ def install_hadoop(is_master):
         fo.close()
 
     def run_install():
-        if not os.path.exists('hadoop-2.6.0'):
+        if not os.path.exists('hadoop-2.7.3'):
             run('wget %s' % hadoop_url)
-            run('tar xf hadoop-2.6.0.tar.gz')
-            run('rm -f hadoop-2.6.0.tar.gz')
+            run('tar xf hadoop-2.7.3.tar.gz')
+            run('rm -f hadoop-2.7.3.tar.gz')
             global HADOOP_HOME
         if HADOOP_HOME is None:
-            HADOOP_HOME = os.path.abspath('hadoop-2.6.0')
+            HADOOP_HOME = os.path.abspath('hadoop-2.7.3')
         env = [('HADOOP_HOME', HADOOP_HOME)]
         env += [('HADOOP_PREFIX', HADOOP_HOME)]
         env += [('HADOOP_MAPRED_HOME', HADOOP_HOME)]
