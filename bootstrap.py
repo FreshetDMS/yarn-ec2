@@ -42,8 +42,8 @@ master_r_packages = [
 ]
 
 # download link of hadoop.
-hadoop_url = 'http://www.motorlogy.com/apache/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz'
-hadoop_dir = 'hadoop-2.6.0'
+hadoop_url = 'http://www-eu.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz'
+hadoop_dir = 'hadoop-2.7.3'
 
 # customized installation script.
 # See optional installation scripts for options.
