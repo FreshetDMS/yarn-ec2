@@ -137,15 +137,15 @@ def install_java():
     install java and setup environment variables
     Returns environment variables that needs to be exported
     """
-    if not os.path.exists('jdk1.8.0_40'):
+    if not os.path.exists('jdk1.8.0_101'):
         run('wget --no-check-certificate --no-cookies'\
                 ' --header \"Cookie: oraclelicense=accept-securebackup-cookie\"'\
-                ' http://download.oracle.com/otn-pub/java/jdk/8u40-b26/jdk-8u40-linux-x64.tar.gz')
-        run('tar xf jdk-8u40-linux-x64.tar.gz')
-        run('rm -f jdk-8u40-linux-x64.tar.gz')
+                ' http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.tar.gz')
+        run('tar xf jdk-8u101-linux-x64.tar.gz')
+        run('rm -f jdk-8u101-linux-x64.tar.gz')
     global JAVA_HOME
     if JAVA_HOME is None:
-        JAVA_HOME = os.path.abspath('jdk1.8.0_40')
+        JAVA_HOME = os.path.abspath('jdk1.8.0_101')
     return [('JAVA_HOME', JAVA_HOME)]
 
 
